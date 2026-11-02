@@ -3,172 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theertha T | AI & Machine Learning</title>
+    <title>Theertha T | Creative AI</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for clean typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Smooth Scroll Library -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
 </head>
 <body>
+
+    <!-- Custom Target Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Background Elements -->
+    <div class="bg-glow glow-blue"></div>
+    <div class="bg-glow glow-red"></div>
+    <div class="noise"></div>
 
     <!-- Navigation -->
     <nav>
         <div class="nav-content">
-            <a href="#" class="logo">Theertha T.</a>
+            <a href="#" class="logo">THEERTHA<span>.</span></a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="fade-in">
+    <section id="hero">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Theertha T</span></h1>
-            <h2>AI & Machine Learning Student</h2>
-            <p>Driven BCA student specializing in AI, Machine Learning, and Robotics. Passionate about building practical solutions, learning through real-world projects, and developing strong software engineering skills.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn primary">View My Work</a>
-                <a href="https://github.com/thirthahh" target="_blank" class="btn secondary">GitHub Profile</a>
+            <div class="hero-tagline reveal-left">
+                <span class="line"></span>
+                <p>AI & FULL STACK DEVELOPER</p>
+            </div>
+            
+            <h1 class="huge-text reveal-up">
+                BUILDING<br>
+                <span class="stroke-text">INTELLIGENT</span><br>
+                WEB APPS
+            </h1>
+            
+            <p class="hero-desc reveal-left">Driven BCA student specializing in AI, Machine Learning, and Software Engineering. I build practical, full-stack applications.</p>
+            
+            <div class="hero-buttons reveal-up">
+                <a href="#projects" class="btn primary magnetic-btn nav-link">Explore Work <i class="fa-solid fa-arrow-down"></i></a>
+                <a href="https://github.com/thirthahh" target="_blank" class="btn secondary magnetic-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        
+        <!-- The 3D Rotating Graphic -->
+        <div class="hero-graphic reveal-scale">
+            <div class="orb-container">
+                <div class="ring-1"></div>
+                <div class="ring-2"></div>
+                <div class="ring-3"></div>
+                <div class="core"></div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="fade-in">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <p>I am currently pursuing my Bachelor of Computer Applications (BCA) with a specialization in Artificial Intelligence & Machine Learning, and a minor in Robotics at Yenepoya Deemed to be University (CGPA: 9.45/10).</p>
-            <p>I love turning complex data into practical, real-world applications. From training deep learning models to classify handwritten characters to building responsive web dashboards, I am constantly exploring the intersection of AI and software engineering.</p>
+    <section id="about">
+        <h2 class="section-title reveal-up">ABOUT <span class="accent-text">ME</span></h2>
+        <div class="about-grid">
+            <div class="about-box reveal-left">
+                <h3>Education</h3>
+                <p>Pursuing BCA in AI & ML at Yenepoya Deemed to be University. Currently holding a 9.45/10 CGPA.</p>
+            </div>
+            <div class="about-box reveal-right">
+                <h3>Philosophy</h3>
+                <p>I love turning complex data into practical, real-world applications. From training deep learning models to building responsive web dashboards, I am constantly exploring.</p>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="fade-in">
-        <h2 class="section-title">Featured Projects</h2>
+    <section id="projects">
+        <h2 class="section-title reveal-up">SELECTED <span class="accent-text">WORK</span></h2>
         
-        <!-- Project 1: CNN -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <i class="fa-solid fa-brain"></i>
-            </div>
-            <div class="project-info">
-                <h3>Malayalam Handwritten Character Recognition</h3>
-                <p>Developed a Deep Learning-based character recognition system to classify handwritten Malayalam characters. Built and trained a CNN model using Python, TensorFlow, and Keras. Preprocessed over 17,000 training images to classify 85 distinct character classes, achieving 87.28% test accuracy.</p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>TensorFlow</span>
-                    <span>Keras</span>
-                    <span>CNN</span>
-                    <span>NumPy</span>
-                </div>
-                <div class="project-links">
-                    <!-- Update this link if you have a specific GitHub repo for the CNN project -->
-                    <a href="https://github.com/thirthahh/Malayalam-Character-Recognition" target="_blank" class="btn secondary btn-small"><i class="fa-brands fa-github"></i> View on GitHub</a>
-
-
-            </div>
-        </div>
-
-        <!-- Project 2: SignalScope -->
-        <div class="project-card">
-            <div class="project-image-placeholder">
-                <i class="fa-solid fa-chart-pie"></i>
-            </div>
-            <div class="project-info">
-                <h3>SignalScope: Data Analytics Dashboard</h3>
-                <p>A responsive, browser-based analytics dashboard that ingests CSV student data. It validates file formats, calculates summary statistics, and generates four dynamic charts using Chart.js.</p>
-                <div class="tech-stack">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>PapaParse</span>
-                    <span>Chart.js</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://thirthahh.github.io/SignalScope/" target="_blank" class="btn primary btn-small">Live Demo</a>
-                    <a href="https://github.com/thirthahh/SignalScope" target="_blank" class="btn secondary btn-small"><i class="fa-brands fa-github"></i> Source Code</a>
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal-up">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <h3>Malayalam Character Recognition</h3>
+                    <p>Deep Learning CNN model using TensorFlow & Keras. Preprocessed 17,000+ images to classify 85 distinct characters with 87.28% accuracy.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>CNN</span>
+                    </div>
+                    <a href="https://github.com/thirthahh/Malayalam-Character-Recognition" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> View Repository</a>
                 </div>
             </div>
-        </div>
-        
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="fade-in">
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>AI & Machine Learning</h3>
-                <ul>
-                    <li>TensorFlow, Keras</li>
-                    <li>CNN, ANN, RNN</li>
-                    <li>Scikit-learn, Pandas, NumPy</li>
-                    <li>Model Training & Evaluation</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Programming & Data</h3>
-                <ul>
-                    <li>Python, Java, C</li>
-                    <li>Data Preprocessing</li>
-                    <li>Image Classification</li>
-                    <li>Basic SQL</li>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Web & Tools</h3>
-                <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Chart.js</li>
-                    <li>Git & GitHub</li>
-                    <li>OOP & Data Structures</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="fade-in">
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-list">
-            <div class="cert-item">
-                <h4>Deep Learning with Python: CNN, ANN & RNN Specialization</h4>
-                <p>EDUCBA</p>
-            </div>
-            <div class="cert-item">
-                <h4>Introduction to Back-End Development</h4>
-                <p>Meta</p>
-            </div>
-            <div class="cert-item">
-                <h4>Introduction to Artificial Intelligence</h4>
-                <p>University of Illinois Urbana-Champaign</p>
-            </div>
-            <div class="cert-item">
-                <h4>Create Your First Python Program</h4>
-                <p>UST</p>
+            <!-- Project 2 -->
+            <div class="project-card reveal-up">
+                <div class="project-number">02</div>
+                <div class="project-content">
+                    <h3>SignalScope Dashboard</h3>
+                    <p>Responsive data analytics dashboard. Ingests CSV data, validates formats, calculates statistics, and renders 4 dynamic Chart.js visualizations.</p>
+                    <div class="tech-stack">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>Chart.js</span>
+                    </div>
+                    <a href="https://thirthahh.github.io/SignalScope/" target="_blank" class="project-link accent-link">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <h2 class="section-title">Get In Touch</h2>
-        <p>I'm currently seeking a Summer Internship where I can apply my skills in AI, Machine Learning, and Software Engineering.</p>
-        <div class="contact-links">
-            <a href="mailto:theerthat351@gmail.com" class="btn primary"><i class="fa-solid fa-envelope"></i> Email Me</a>
-            <a href="https://www.linkedin.com/in/theertha-t-154093364" target="_blank" class="btn secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <section id="contact">
+        <div class="contact-box reveal-up">
+            <h2 class="huge-text">LET'S<br>BUILD<br><span class="stroke-text">TOGETHER</span></h2>
+            <div class="contact-links">
+                <a href="mailto:theerthat351@gmail.com" class="btn primary magnetic-btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/theertha-t-154093364" target="_blank" class="btn secondary magnetic-btn">LinkedIn</a>
+            </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Theertha T. Built from scratch with HTML, CSS, and JS.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
